@@ -1,21 +1,3 @@
-import 'dart:html';
-
-InputElement toDoInput;
-UListElement toDoList;
-ButtonElement deleteAll;
-
-void main() {
-  toDoInput = query('#to-do-input');
-  toDoList = query('#to-do-list');
-  toDoInput.onChange.listen(addToDoItem);
-  deleteAll = query('#delete-all');
-  deleteAll.onClick.listen((e) => toDoList.children.clear());
-}
-
-void addToDoItem(Event e) {
-  var newToDo = new LIElement();
-  newToDo.text = toDoInput.value;
-  newToDo.onClick.listen((e) => newToDo.remove());
-  toDoInput.value = '';
-  toDoList.children.add(newToDo);
-}
+import "dart:html" as j;class o{static const  q="Chrome";static const  s="Firefox";static const  t="Internet Explorer";static const  u="Safari";final  m;final  minimumVersion;const o(this.m,[this.minimumVersion]);}class v{const v();}class AB{final  name;const AB(this.name);}class BB{const BB();}class CB{const CB();}var h;var i;var k; main(){h=j.query('#to-do-input');i=j.query('#to-do-list');h.onChange.listen(l);k=j.query('#delete-all');k.onClick.listen((g)=>i.children.clear());} l( n){var g=new j.LIElement();g.text=h.value;g.onClick.listen((n)=>g.remove());h.value='';i.children.add(g);}
+//# sourceMappingURL=todo_with_delete.dart.map
+//@ sourceMappingURL=todo_with_delete.dart.map
